@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telefon qo'shish</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 flex justify-center items-center min-h-screen">
+
+<div class="bg-white w-[400px] p-6 rounded-lg shadow-lg">
+
+    <h2 class="text-2xl font-bold text-center mb-4">📱 Yangi telefon</h2>
+
+    <form method="POST" enctype="multipart/form-data" class="space-y-3">
+        <input type="text" name="nomi" placeholder="Telefon nomi" required class="w-full border p-2 rounded">
+        <input type="number" name="narxi" placeholder="Narxi" required class="w-full border p-2 rounded">
+        <input type="file" name="rasm" class="w-full border p-2 rounded">
+        <input type="number" name="soni" placeholder="Soni" required class="w-full border p-2 rounded">
+        <textarea name="malumot" placeholder="Telefon haqida..." class="w-full border p-2 rounded"></textarea>
+
+        <button type="submit" class="bg-green-600 text-white w-full py-2 rounded">
+            SAQLASH
+        </button>
+    </form>
+
+    <a href="/" class="block mt-4 text-center text-blue-600">Ortga qaytish</a>
+</div>
+
+</body>
+</html>
+
+

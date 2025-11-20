@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telefon Do'koni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white p-6">
+
+<div class="max-w-6xl mx-auto">
+
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold">📱 Telefon Do'koni</h1>
+        <a href="/create-phone" class="bg-blue-600 px-4 py-2 rounded-lg">+ Yangi telefon</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {% for tel in telefonlar %}
+        <div class="bg-white text-black rounded-lg shadow-md overflow-hidden">
+
+            <img src="/{{ tel.rasm }}" class="w-full h-48 object-cover">
+
+            <div class="p-4">
+                <h2 class="text-xl font-bold">{{ tel.nomi }}</h2>
+                <p><b>Narxi:</b> {{ tel.narxi }} so'm</p>
+                <p><b>Soni:</b> {{ tel.soni }} ta</p>
+                <p>{{ tel.malumot }}</p>
+
+                <div class="mt-4 flex justify-between">
+                    <a href="/edit-phone/{{ tel.id }}" class="bg-yellow-500 text-white px-3 py-1 rounded">Tahrirlash</a>
+                    <a href="/delete-phone/{{ tel.id }}" class="bg-red-600 text-white px-3 py-1 rounded">O'chirish</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
