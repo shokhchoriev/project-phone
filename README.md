@@ -18,3 +18,7 @@ Bu loyiha Flask yordamida telefonlar uchun CRUD tizimidir.
 
 ```bash
 python main.py
+
+![Loyiha skrinshoti](project.png,)
+![Loyiha skrinshoti](project1.png,)
+![Loyiha skrinshoti](project2.png,)
